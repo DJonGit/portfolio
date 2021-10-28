@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+    background-color: #F4F4F2;
+    
+    
+}
+ol, ul {
+    list-style: none;
+  }
+  main {
+      width: 92%;
+      margin: auto;
+      display: grid;
+      grid-template: repeat(40, 5rem)/ repeat(9, 1fr);
+    max-width: 1600px;
+    /* grid-gap: 1rem; */
+  }
+/* ----- Header -------- */
+  header {
+     background-color:  #BBBFCA;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 4rem;
+     opacity: .6;
+     position: fixed;
+     width: 100%;
+     z-index: 9;
+  }
+.logoHeading {
+    margin-left: 2rem;
+}
+  ul {
+      display: flex;
+
+  }
+ .navigation li {
+      margin-right: 2rem;
+  }
+  
+
+/* ---------- About Section -------- */
+
+
+#about {
+    grid-area: 1/ 1/ 15/ 6;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      
+  }
+ .aboutImage {
+     grid-area: 1/ 6/ 13/span 4;
+ }
+
+ .aboutImage img{
+   
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+ }
+
+ .skillsHeading {
+     grid-area: 13/ 6/ 15/ span 4;
+     width: 100%;
+     height: 100%;
+     border: 1px solid black;
+     display: flex;
+     align-items: center;
+     font-size: 2rem;
+ }
+ #skills {
+     grid-area: 15/ 5/ 21/ span 5;
+     width: 100%;
+     height: 100%;
+     border: 1px solid black;
+     
+     
+
+ }
+ .skillsList {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: end;
+     justify-content: space-around;
+     margin-right: 0;
+ }
+
+
+     
+ 
+ .skillLogos {
+     grid-area: 15/ 1/ 23/ 5;
+     width: 100%;
+     height: 100%;
+     border: 1px solid black;
+ }
+.projectsHeading {
+    grid-area: 21/ 5/ 23/ 10;
+    width: 100%;
+     height: 100%;
+     border: 1px solid black;
+     display: flex;
+     align-items: center;
+     font-size: 2rem;
+     background-color: white;
+}
+#projects {
+    grid-area: 23/ 1/ 30/ 6;
+    width: 100%;
+     height: 100%;
+     border: 1px solid black;
+}
+
+.contactHeading {
+    grid-area: 30/ 1/ 32/ 6;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.contactPhoto {
+    grid-area: 32/ 6/ 38/10;
+
+}
+#contact {
+    grid-area: 32/ 1/ 38/ 6;
+    width: 100%;
+     height: 100%;
+     border: 1px solid black;
+
+}
+
+.contactPhoto img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+#contact, form, {
+     display: none;
+    }

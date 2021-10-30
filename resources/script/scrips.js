@@ -19,10 +19,11 @@ let skillsOver = document.getElementById('skills');
 
 function color() {
     skillColor.style.zIndex = '3';
-    // skills.style.color = 'red';
+    blackSkills();
 }
 function bw() {
     skillColor.style.zIndex = '0';
+    greySkills()
 }
 
 skillsOver.addEventListener('mouseover', color);

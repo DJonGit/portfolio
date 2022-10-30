@@ -18,10 +18,12 @@ skillHeadingOver.addEventListener('mouseout', greySkills);
 let skillsOver = document.getElementById('skills');
 
 function color() {
+    skillColor.style.transitionDuration = '1s';
     skillColor.style.zIndex = '3';
     blackSkills();
 }
 function bw() {
+    // skillColor.style.transitionDuration = '1s';
     skillColor.style.zIndex = '0';
     greySkills()
 }
@@ -29,3 +31,17 @@ function bw() {
 skillsOver.addEventListener('mouseover', color);
 skillsOver.addEventListener('mouseout', bw);
 
+// const buttonElement = document.getElementById('secret-button');
+// const imgElement = document.getElementById('secret-img');
+ 
+// const toggleHiddenElement = (domElement) => {
+//     if (domElement.style.display === 'none') {
+//       domElement.style.display = 'block';
+//     } else {
+//       domElement.style.display = 'none';
+//     }
+// }
+ 
+// buttonElement.addEventListener('click', () => {
+//   toggleHiddenElement(imgElement);
+// });

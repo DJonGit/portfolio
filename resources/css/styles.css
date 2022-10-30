@@ -11,10 +11,16 @@ body {
     
     
 }
+a {
+    text-decoration: none;
+    color:#1a1b1d;
+}
+
 ol, ul {
     list-style: none;
   }
   main {
+    margin-top: 10%;
       width: 92%;
       margin: auto;
       display: grid;
@@ -56,6 +62,7 @@ nav  ul {
 
 
 #about {
+    margin-top: 12%;
     grid-area: 1/ 1/ 15/ 6;
       display: flex;
       align-items: center;
@@ -74,6 +81,7 @@ nav  ul {
 }
 
  .aboutImage {
+    margin-top: 10%;
      grid-area: 2/ 6/ 13/span 4;
  }
 
@@ -101,6 +109,7 @@ nav  ul {
      height: 100%;
      /* border: 1px solid black; */
      background-color: white;
+     padding: 2rem;
        
 
  }
@@ -112,7 +121,7 @@ nav  ul {
      align-items: center;
      justify-content: space-around;
      margin-right: 0;
-     font-weight: 700;
+     /* font-weight: 700; */
     }
 
 
@@ -195,7 +204,7 @@ nav  ul {
      background-color: white;
 }
 #projects h3 {
-    margin: 17rem  3rem 0 1rem;
+    margin: -25rem 3rem 0 5rem;
     
 }
 #projects ul li {
@@ -210,14 +219,15 @@ nav  ul {
     align-items: center;
     justify-content: end;
     /* background-color: white; */
+    margin-right: 3rem;
 }
 
 .contactPhoto {
-    grid-area: 31/ 8/ 40/10;
+    grid-area: 30/ 7/ 40/10;
 
 }
 #contact {
-    grid-area: 32/ 1/ 37/ 7;
+    grid-area: 32/ 1/ 39/ 7;
     width: 100%;
      height: 100%;
      /* border: 1px solid black; */
@@ -233,7 +243,9 @@ nav  ul {
     object-fit: cover;
 }
 
-
+#contact p {
+    margin-left: 5rem;
+}
 
 
 

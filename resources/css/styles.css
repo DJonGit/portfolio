@@ -207,8 +207,12 @@ nav  ul {
     margin: -25rem 3rem 0 5rem;
     
 }
+#projects ul {
+    margin: auto;
+}
 #projects ul li {
     line-height: 3rem;
+    
 }
 
 /* -------Contacts Section--------- */
@@ -263,4 +267,114 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Small screen section */
+
+@media only screen and (max-width: 650px){
+    main{
+        grid-template: repeat(30, 5rem)/ repeat(9, 1fr);
+    }
+    header {
+        position: static;
+        
+    }
+    header h2 {
+        font-size: 100%;
+    }
+    nav ul {
+        font-size: 80%;
+    }
+    
+    #about {
+        margin-top: .6rem;
+        grid-area: 1/ 1/ 9/ 9;
+        align-items: start;
+        flex-direction: column;
+    }
+    .aboutImage {
+        margin: 0;
+        grid-area: 5/ 2/ 8/ 10;
+    }
+
+    #about h1 {
+        margin: 2rem auto 0;
+    }
+
+    #skillsHeading {
+        grid-area: 10/ 1/ 11/ 9;
+        z-index: 10;
+    }
+
+    #skills {
+        grid-area: 10/ 2/ 17/ 10;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .skillBanner {
+        margin-top: -1rem;
+        grid-area: 11/ 1/ 13/ 9;
+        z-index: 1;
+    }
+    #skillColor {
+        display: none;
+    }
+    .skillsList {
+        height: 55%;
+        justify-content: space-evenly;
+    }
+    .projectsHeading {
+       
+        grid-area: 17/ 2/ 18/ 9;
+        justify-content: center;
+        z-index: 1;
+    }
+    #projects {
+        
+        grid-area: 17/ 2/ 25/ 9;
+        flex-direction: column;
+        justify-content: end;
+    }
+    #projects h3 {
+        margin: .5rem 0;
+        
+    }
+
+    .projectsBanner {
+        margin-top: -.5rem;
+        grid-area: 18/ 3/ 20/ 10;
+        z-index: 1;
+      }
+      /* adjust to accomodate additional projects */
+    #projects ul {
+        height: 48%;
+        
+    }
+    .contactHeading {
+        grid-area: 25/ 1/ 26/ 7;
+        z-index: 1;
+        margin: auto;
+    }
+
+    #contact {
+        grid-area: 25/ 1/ 31/ 7;
+    }
+    #contact p {
+        margin: auto;
+        height: 57%;
+        font-size: .8rem;
+    }
+    .contactPhoto {
+        grid-area: 27/ 3/ 30/10;
+      }
+      footer {
+        opacity: .6;
+        margin-top: 1rem;
+      }
+      footer h6 {
+        text-align: center;
+      }
+
 }

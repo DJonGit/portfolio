@@ -350,6 +350,7 @@ footer {
       /* adjust to accomodate additional projects */
     #projects ul {
         height: 48%;
+        margin: 0;
         
     }
     .contactHeading {
